@@ -2,9 +2,15 @@ import "../styles/sidebar.css";
 
 function displaySidebar() {
   const project = createCard("Project");
+  const task = createCard("Task");
+  const completed = createCard("Completed");
+  const dueSoon = createCard("Due Soon");
 
   const sidebar = document.createElement("sidebar");
   sidebar.appendChild(project.div);
+  sidebar.appendChild(task.div);
+  sidebar.appendChild(completed.div);
+  sidebar.appendChild(dueSoon.div);
 
   document.body.appendChild(sidebar);
 }
