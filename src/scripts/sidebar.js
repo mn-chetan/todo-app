@@ -6,7 +6,9 @@ function displaySidebar() {
   const completed = createCard("Completed");
   const dueSoon = createCard("Due Soon");
 
-  const sidebar = document.createElement("sidebar");
+  const sidebar = document.createElement("aside");
+  sidebar.id = "sidebar";
+
   sidebar.appendChild(project.div);
   sidebar.appendChild(task.div);
   sidebar.appendChild(completed.div);
