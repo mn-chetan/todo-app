@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({ title: "Terminal Todo v0.0.1" })],
   module: {
     rules: [
       {
