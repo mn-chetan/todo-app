@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Red Rose";
+  src: url("../fonts/RedRose-Regular.woff2") format("woff2"),
+    url("../fonts/RedRose-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 #sidebar {
   border-right: 2px solid #39ff14;
   width: 18rem;
@@ -6,6 +15,9 @@
   flex-direction: column;
   gap: 1.5rem;
   background-color: #1a1a1a;
+  font-family: "Red Rose";
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 
 .card {
