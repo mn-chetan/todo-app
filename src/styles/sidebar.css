@@ -1,0 +1,28 @@
+#sidebar {
+  border-right: 2px solid #39ff14;
+  width: 18rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #1a1a1a;
+}
+
+.card {
+  padding: 0.5rem;
+  border: 2px solid #80b918;
+  width: 60%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.card:nth-of-type(1) {
+  margin-top: 1rem;
+}
+
+.card h2 {
+  color: #eeef20;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+}
