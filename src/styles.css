@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #081c15;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar terminal";
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#header {
+  grid-area: header;
+}
+
+#terminal {
+  grid-area: terminal;
+}
