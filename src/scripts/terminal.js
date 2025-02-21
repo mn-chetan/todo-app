@@ -20,9 +20,23 @@ function displayTerminal() {
   terminalHeader.appendChild(h3);
   terminalHeader.appendChild(windowControls);
 
+  const span = document.createElement("span");
+  span.textContent = "$";
+  span.id = "prompt";
+
+  const input = document.createElement("input");
+  input.type = "text";
+  input.id = "input";
+
+  const inputLine = document.createElement("div");
+  inputLine.id = "input-line";
+  inputLine.appendChild(span);
+  inputLine.appendChild(input);
+
   const terminal = document.createElement("div");
   terminal.id = "terminal";
   terminal.appendChild(terminalHeader);
+  terminal.appendChild(inputLine);
 
   document.body.appendChild(terminal);
 }
