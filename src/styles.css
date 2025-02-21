@@ -1,15 +1,18 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #081c15;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr 1fr;
   grid-template-areas:
     "sidebar header"
-    "sidebar terminal";
+    "sidebar terminal"
+    "sidebar main"
+    "sidebar main";
 }
 
 #sidebar {
@@ -22,4 +25,8 @@ body {
 
 #terminal {
   grid-area: terminal;
+}
+
+#main {
+  grid-area: main;
 }
