@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "PT Mono";
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"),
+    url("../fonts/PTMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 #terminal {
   color: #a100f2;
   justify-self: center;
@@ -5,6 +14,7 @@
   border-radius: 1rem;
   padding: 1rem;
   margin-top: 1.85rem;
+  font-family: "PT Mono", "Courier New", Courier, monospace;
 }
 
 #terminal-header {
@@ -42,4 +52,25 @@
 
 #green-button {
   background-color: #b5e48c;
+}
+
+#input-line {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #00ff00;
+  font-size: 1rem;
+  flex-grow: 1;
+  font-family: inherit;
+}
+
+#prompt {
+  font-size: 1.5rem;
 }
