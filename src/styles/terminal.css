@@ -1,0 +1,45 @@
+#terminal {
+  color: #a100f2;
+  justify-self: center;
+  border: 2px solid #39ff14;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1.85rem;
+}
+
+#terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12rem;
+  border-bottom: 2px solid #39ff14;
+  padding-bottom: 0.2rem;
+}
+
+#terminal-header h3 {
+  font-size: 2rem;
+}
+
+.window-button {
+  border: none;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+
+#window-control {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#red-button {
+  background-color: #ef233c;
+}
+
+#yellow-button {
+  background-color: #eeef20;
+}
+
+#green-button {
+  background-color: #b5e48c;
+}
